@@ -8,7 +8,11 @@ import javax.swing.JOptionPane;
 
 public class GoofyNames {
 	public static void main(String[] args) {
-		String goofyName = "";
+		String goofyName = JOptionPane.showInputDialog(null, "What is your name?");
+		if (goofyName.charAt(4)) {
+			
+		}
+		
 
 		// 1. Ask the user to enter their name
 
