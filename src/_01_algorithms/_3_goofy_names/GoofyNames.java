@@ -9,9 +9,15 @@ import javax.swing.JOptionPane;
 public class GoofyNames {
 	public static void main(String[] args) {
 		String goofyName = JOptionPane.showInputDialog(null, "What is your name?");
-		if (goofyName.charAt(4)) {
-			
-		}
+		 for (int i = 0; i < goofyName.length(); i++) {
+			 char char1 = goofyName.charAt(goofyName.length());
+			 if (char1 % 2 == 0) {
+				 goofyName.toUpperCase();
+			 } else if (char1 % 2 == 1) {
+				 goofyName.toLowerCase();
+			 }
+			 System.out.println(goofyName);
+		 }
 		
 
 		// 1. Ask the user to enter their name

@@ -13,14 +13,22 @@ public class Snowflake {
 		rob.setX(300);
 		rob.penDown();
 		rob.setSpeed(5);
-		for(int i = 2; i <= 2; ++i) {
-			rob.setPenColor(0, 0, 0);
+		for(int i = 0; i <= 6; i++) {
+			rob.setPenColor(0,0,0);
 			rob.move(50);
 			rob.turn(60);
-			rob.setPenColor(255, 0, 0);
-			for(int x = 2; i <= number/2; ++i){
-	            if(number % i == 0){
+			if (i % 2 == 1) {
+				rob.setPenColor(0,0,255);
+			} else if (i % 2 == 0) {
+				rob.setPenColor(255,0,0);
+			}
+			for(int j = 0; j <= 6; j++) {
+				rob.turn(-60);
+				rob.move(50);
+			}
+			rob.setPenColor(0,0,0);
 		}
+			
 
 		// #1. Make a new Robot
 
